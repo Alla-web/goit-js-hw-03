@@ -1,11 +1,5 @@
 function makeArray(firstArray, secondArray, maxLength) {
-  let newArray = [];
-
-  if (firstArray.concat(secondArray).length < maxLength) {
-    return `Sorry, max length more then total length of both arrays`;
-  } else {
-    newArray = firstArray.concat(secondArray).slice(0, maxLength);
-  }
+  let newArray = firstArray.concat(secondArray).slice(0, maxLength);
 
   //   або
   //   for (let i = 0; i < maxLength; i++) {
